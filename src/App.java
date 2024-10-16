@@ -30,6 +30,8 @@ public class App {
         Persona encontrar = ordenarybuscar.buscarUsuario(personas,buscar);
         if (encontrar != null) {
             System.out.println("Persona encontrada: " + encontrar.toString());
-        }  
+        }  else {
+            System.out.println("Persona no encontrada");
+        }
     }  
 }
