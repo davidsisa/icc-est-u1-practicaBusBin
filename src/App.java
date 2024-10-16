@@ -4,7 +4,7 @@ public class App {
         //
         //personas[0] = new Personas (nombre,edad);
        Scanner leer = new Scanner (System.in);
-       OrdenarBusqueda ordenar = new OrdenarBusqueda();
+       OrdenarBusqueda ordenarybuscar = new OrdenarBusqueda();
        System.out.println(" INGRESE LA CANTIDAD DE PERSONAS QUE QUIERE REGISTRAR: ");
        int tamanio = leer.nextInt();
        leer.nextLine();
@@ -19,12 +19,15 @@ public class App {
             
         }
 
-        personas = ordenar.ordenarLista(personas);
+        personas = ordenarybuscar.ordenarLista(personas);
         System.out.println("------------LISTA DE USUARIOS---------");
         for (Persona persona : personas) {
             System.out.println(persona.toString());
         }
-
+        System.out.println("Ingresa un numero que quieras buscar dentro de la lista:  ");
+        int buscar = leer.nextInt();
+        leer.nextLine();
+        
 
     }  
 }
