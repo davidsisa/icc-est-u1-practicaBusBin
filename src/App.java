@@ -27,7 +27,9 @@ public class App {
         System.out.println("Ingresa un numero que quieras buscar dentro de la lista:  ");
         int buscar = leer.nextInt();
         leer.nextLine();
-        
-
+        Persona encontrar = ordenarybuscar.buscarUsuario(personas,buscar);
+        if (encontrar != null) {
+            System.out.println("Persona encontrada: " + encontrar.toString());
+        }  
     }  
 }
